@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--TOP NAV-->
+
+    <nav>
+      <div class="nav_left">
+        <button class="icon-btn">
+          <i class="fa-regular fa-book-open"></i>
+        </button>
+
+        <button class="icon-btn">
+          <i class="fa-regular fa-images"></i>
+        </button>
+      </div>
+
+      <div class="nav-right">
+        <button class="icon-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="title">
+        <h1>Traval</h1>
+        <p>Pages <span id="current-page">1 </span>of <span id="total-pages">10</span></p>
+    </div>
+
+    <!--THE BOOK-->
+
+    <div class="full book">
+        <!-- LEFT ARROW -->
+        <button class="left-arrow"><i class="fa-regular fa-angle-left"></i></button>
+
+        <div class="book">
+
+            <!-- LEFT PAGE -->
+            <div class="left-side">
+                <div class="large">
+                    <img src="images/img1.jpg" alt=" photo">
+                </div>
+                <div class="photo-row">
+                    <div class="small"><img src="images/img2.jpg" alt=" photo"></div>
+                    <div class="small"><img src="images/img3.jpg" alt=" photo"></div>
+                </div>
+
+            </div>
+
+            <!-- BOOK SPINE -->
+            <div class="spine"></div>
+           
+            <!-- RIGHT PAGE -->
+            <div class="right-side">
+                <div class="photo-row">
+                    <div class="small"><img src="images/img4.jpg" alt="photo"></div>
+                    <div class="small"><img src="images/img5.jpg" alt="photo"></div>
+                </div>
+                <div class="large">
+                    <img src="images/img6.jpg" alt="photo">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT ARROW -->
+        <button class="right-arrow"><i class="fa-regular fa-angle-right"></i></button>
+
+    </div>
+    <!-- PAGE INDICATOR -->
+    <div class="page-indicator">
+      <span id="pageNum">1</span> / <span id="totalPages">7</span>
+    </div>
+    
+  </body>
+</html>
